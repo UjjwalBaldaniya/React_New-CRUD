@@ -4,6 +4,17 @@ export const formField = (field) => ({
   payload: field,
 });
 
-export const decrement = () => ({
-  type: "DECREMENT",
+export const editToggle = (value) => ({
+  type: "EDIT_TOGGLE",
+  payload: value,
+});
+
+export const editFormField = (value) => ({
+  type: "EDIT_FORM_FIELD",
+  payload: value,
+});
+
+export const deleteFormField = (value) => ({
+  type: "DELETE_FORM_FIELD",
+  payload: value,
 });
